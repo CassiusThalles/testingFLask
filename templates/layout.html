@@ -1,0 +1,36 @@
+﻿﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} - Athena </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'content/bootstrap.css' ) }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'content/bootstrap.css' ) }}" />
+    <script src="../static/scripts/modernizr-2.6.2.js"></script>
+</head>
+
+<body>
+  <!--  <div class="navbar navbar-inverse navbar-fixed-top"> -->
+        <div class="container">
+                <h1> Athena</h1>
+         </div>
+ <!--   </div> -->
+
+    <div class="container">
+        <ul class="menu">
+            <li><a href="{{ url_for('index' ) }} "> Index </a></li>
+            <li><a href="{{ url_for('lstHistorias' ) }} "> Histórias de Pacientes </a></li>
+
+        </div>
+
+        <div class="container body-content">
+        </div>
+
+            <script src="../static/scripts/jquery-1.10.2.js"></script>
+            <script src="../static/scripts/bootstrap.js"></script>
+            <script src="../static/scripts/respond.js"></script>
+    </div>
+            {% block scripts %}{% endblock %}
+
+</body>
+</html>
